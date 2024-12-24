@@ -145,22 +145,6 @@ def linspace(start, stop, num=400):
     yield from (start + i * step for i in range(num))
 
 
-def restrict_to_english(event, entry):
-    """
-    Restrict the entry content to English letters, numbers, and spaces only.
-
-    Args:
-        event: The event object triggered by a key release.
-        entry: The Tkinter Entry widget to be restricted.
-
-    Returns:
-        None
-    """
-    entry_content = entry.get()
-    restricted_content = re.sub(r'[^(\-)* | a-zA-Z0-9\s]', '', entry_content)
-    entry.delete(0, END)
-    entry.insert(0, restricted_content)
-
 def convert_expression(expression):
     """
     Convert the expression to include multiplication signs where necessary.
@@ -357,13 +341,6 @@ owner.bind("<Button-1>", open_url)  # Bind the label click event to open the URL
 # Create and position the canvas for drawing the plot
 canvas = Canvas(root, width=665, height=500)
 canvas.grid(row=6, column=0, columnspan=5, padx=20, pady=5)
-
-# Bind key release events to the restrict_to_english function
-t_start_entry.bind('<KeyRelease>', lambda event: restrict_to_english(event, t_start_entry))
-t_end_entry.bind('<KeyRelease>', lambda event: restrict_to_english(event, t_end_entry))
-problem_entry.bind('<KeyRelease>', lambda event: restrict_to_english(event, problem_entry))
-alpha_entry.bind('<KeyRelease>', lambda event: restrict_to_english(event, alpha_entry))
-omega_entry.bind('<KeyRelease>', lambda event: restrict_to_english(event, omega_entry))
 
 # Initialize the plot with the default values
 show_plot()
