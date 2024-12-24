@@ -80,7 +80,7 @@ def open_url(event):
 
 root = Tk()
 root.iconbitmap(r'drawplot.ico')
-root.title("رسم نمودار با توابع ویژه توسعه یافته توسط Mr.Hidden - https://t.me/Darker1063 - @Darker1063")
+root.title("Drawplot")
 width = int(root.winfo_screenwidth())
 height = int(root.winfo_screenheight())
 RIGHT_RIGHT = str((int(width) - 800) // 2)
