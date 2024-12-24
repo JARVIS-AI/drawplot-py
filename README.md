@@ -3,7 +3,15 @@ Drawing Plot for Signal &amp; System designs
 
 ## Screenshot
 
-![MainUI](sc/sc_1.png)
+##### macOS
+
+![MainUI MacOS](sc/sc_1.png)
+
+---
+
+##### Windows
+
+![MainUI Windows](sc/sc_2.png)
 
 ## Requirements
 
