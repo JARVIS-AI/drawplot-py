@@ -14,7 +14,9 @@ Drawing Plot for Signal &amp; System designs
 ## Credit
 
 - Windows developer : [Mr.Hidden](https://t.me/Darker1063)
+- - [Github](https://github.com/hamid1021)
 - macOS and Linux developer : [J4RVIS](https://me.amsl.ir)
+- - [GitHub](https://github.com/JARVIS-AI)
 
 ## Thanks
 
