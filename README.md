@@ -1,6 +1,10 @@
 # drawplot-py
 Drawing Plot for Signal &amp; System designs
 
+## Screenshot
+
+![MainUI](SC/sc_1.png_)
+
 ## Requirements
 
 - Python 3.13+
