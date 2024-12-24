@@ -3,7 +3,7 @@ Drawing Plot for Signal &amp; System designs
 
 ## Screenshot
 
-![MainUI](SC/sc_1.png)
+![MainUI](sc/sc_1.png)
 
 ## Requirements
 
