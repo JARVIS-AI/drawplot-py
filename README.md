@@ -1,6 +1,10 @@
 # drawplot-py
 Drawing Plot for Signal &amp; System designs
 
+## Requirements
+
+- Python 3.13+
+- Install pip and related packages
 
 ## Powered
 
