@@ -96,6 +96,10 @@ Same goes on linux
 ```bash
 python3.13 -m venv .env
 
+source .env/bin/activate [UNIX]
+
+.\.env\bin\activate [WINDOWS NT]
+
 pip install -r requirements.txt
 
 pyinstaller --onefile --windowed --icon=drawplot.ico --noconsole --strip --clean --name "Drawplot" drawplot.py

@@ -35,11 +35,10 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['drawplot.ico'],
 )
 app = BUNDLE(
     exe,
     name='Drawplot_FA_macOS.app',
-    icon='drawplot.ico',
+    icon=None,
     bundle_identifier=None,
 )
