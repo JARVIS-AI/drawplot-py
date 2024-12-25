@@ -2,6 +2,7 @@ import math
 import webbrowser
 import re
 from tkinter import *
+import base64
 
 def s(t):
     return 1 if t == 0 else 0
@@ -101,7 +102,14 @@ def open_url_jm(event):
 
 # Initialize the main Tkinter window
 root = Tk()
-root.iconbitmap(r'drawplot.ico')  # Set the icon for the window
+with open("icon.py", "r") as wri:
+    encoded_string = wri.read()
+
+icon = base64.b64decode(encoded_string)
+
+with open("temp.ico", "wb") as temp_icon:
+    temp_icon.write(icon)
+root.iconbitmap(r'temp.ico') # Set the icon for the window
 root.title("ドロープロット 日本語")  # Set the window title
 
 main_width = 880  # Width of the main window
