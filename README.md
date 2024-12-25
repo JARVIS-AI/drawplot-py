@@ -43,7 +43,17 @@ Japanese Version
 
 ##### Windows
 
-![MainUI Windows](sc/sc_win.png)
+Windows English Version
+
+![MainUI Windows](sc/sc_w_en.png)
+
+Windows Japanese Version
+
+![MainUI Windows](sc/sc_w_jp.png)
+
+Windows Farsi Version
+
+![MainUI Windows](sc/sc_w_fa.png)
 
 ## Requirements for Version 1
 
@@ -65,7 +75,7 @@ You can use pre build macOS farsi version [here](https://github.com/JARVIS-AI/dr
 
 If you want other versions and language just use source code and compile them by yourself
 
-## How to compile
+## How to compile version 2 (Recommended)
 
 ```bash
 python3.13 -m venv .env
@@ -81,6 +91,16 @@ pyinstaller --onefile --windowed --icon=drawplot.ico --noconsole --strip --clean
 on Windows just rename the --name "Drawplot_JP_Win"
 
 Same goes on linux
+```
+
+## How to compile version 1
+
+```bash
+python3.13 -m venv .env
+
+pip install -r requirements.txt
+
+pyinstaller --onefile --windowed --icon=drawplot.ico --noconsole --strip --clean --name "Drawplot" drawplot.py
 ```
 
 ## Credit
