@@ -129,35 +129,35 @@ alpha_val = StringVar(root, 1.0)
 omega_val = StringVar(root, 1.0)
 
 # Create guide labels
-guide_label_1 = Label(root, text="u(t) - r(t) - sin(t, omega) - cos(t, omega) - delta(t) | s(t) - exp_decay(t, alpha) | e_1(t, alpha) - exp(t, alpha) | e(t, alpha): لیست توابع", anchor='e', justify=RIGHT)
-guide_label_2 = Label(root, text="u(t) - r(t-1) + 2*delta(t-2): صورت مسئله را به این شکل وارد کنید مثال", anchor='e', justify=RIGHT)
+guide_label_1 = Label(root, text="u(t) - r(t) - sin(t, omega) - cos(t, omega) - delta(t)  |  s(t) - exp_decay(t, alpha)  |  e_1(t, alpha) - exp(t, alpha)  |  e(t, alpha) : لیست توابع", anchor='e', justify=RIGHT)
+guide_label_2 = Label(root, text="u(t) - r(t-1) + 2*delta(t-2) : صورت مسئله را به این شکل وارد کنید مثال", anchor='e', justify=RIGHT)
 
 # Position guide labels
 guide_label_1.grid(row=0, column=0, columnspan=5, padx=10, pady=2, sticky=E)
 guide_label_2.grid(row=1, column=0, columnspan=5, padx=10, pady=2, sticky=E)
 
 # Create and position labels and entry fields for user inputs
-t_start_label = Label(root, text=": شروع نمودار از")
+t_start_label = Label(root, text="شروع نمودار از :")
 t_start_label.grid(row=2, column=4)
 t_start_entry = Entry(root, text=t_start, width=20, font=55)
 t_start_entry.grid(row=2, column=3, pady=5, sticky=E)
 
-t_end_label = Label(root, text=": پایان نمودار در")
+t_end_label = Label(root, text="پایان نمودار در :")
 t_end_label.grid(row=2, column=2)
 t_end_entry = Entry(root, text=t_end, width=20, font=55)
 t_end_entry.grid(row=2, column=1, pady=5, sticky=E)
 
-problem_label = Label(root, text=": صورت مسئله")
+problem_label = Label(root, text="صورت مسئله :")
 problem_label.grid(row=3, column=4, pady=5)
 problem_entry = Entry(root, text=sample_problem, width=57, font=55)
 problem_entry.grid(row=3, column=1, columnspan=3, pady=5, sticky=E)
 
-alpha_label = Label(root, text=": مقدار alpha")
+alpha_label = Label(root, text="مقدار alpha :")
 alpha_label.grid(row=4, column=4, pady=5)
 alpha_entry = Entry(root, text=alpha_val, width=20, font=55)
 alpha_entry.grid(row=4, column=3, pady=5, sticky=E)
 
-omega_label = Label(root, text=": مقدار omega")
+omega_label = Label(root, text="مقدار omega :")
 omega_label.grid(row=4, column=2, pady=5)
 omega_entry = Entry(root, text=omega_val, width=20, font=55)
 omega_entry.grid(row=4, column=1, pady=5, sticky=E)
@@ -167,11 +167,11 @@ btn = Button(root, text="رسم نمودار", command=show_plot, width=30)
 btn.grid(row=5, column=0, columnspan=5, padx=20, pady=5)
 
 # Create and position the label with hyperlink
-owner = Label(root, text="Mr.Hidden - t.me/Darker1063 - @Darker1063", fg="blue", cursor="hand2")
+owner = Label(root, text="Mr.Hidden - Tel : @Darker1063", fg="blue", cursor="hand2")
 owner.grid(row=7, column=0, columnspan=5, pady=5)
 owner.bind("<Button-1>", open_url)  # Bind the label click event to open the URL
 
-owner2 = Label(root, text="J4RVIS - me.amsl.ir - t.me/J4RVIS", fg="blue", cursor="hand2")
+owner2 = Label(root, text="J4RVIS - me.amsl.ir - Tel : @J4RVIS", fg="blue", cursor="hand2")
 owner2.grid(row=8, column=0, columnspan=5, pady=5)
 owner2.bind("<Button-1>", open_url_jm)
 
