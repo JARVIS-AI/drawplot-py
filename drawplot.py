@@ -6,6 +6,7 @@ import io
 import sys
 import webbrowser
 import base64
+from icon import encoded_string
 
 def s(t):
     return np.where(t == 0, 1, 0)
@@ -82,15 +83,13 @@ def open_url_jm(event):
     webbrowser.open_new(r"https://me.amsl.ir")
 
 root = Tk()
-
-with open("icon.py", "r") as wri:
-    encoded_string = wri.read()
-
-icon = base64.b64decode(encoded_string)
-
-with open("temp.ico", "wb") as temp_icon:
-    temp_icon.write(icon)
-root.iconbitmap(r'temp.ico')
+try:
+    icon = base64.b64decode(encoded_string)
+    with open("temp.ico", "wb") as temp_icon:
+        temp_icon.write(icon)
+    root.iconbitmap(r'temp.ico') # Set the icon for the window
+except:
+    pass
 root.title("Drawplot")
 width = int(root.winfo_screenwidth())
 height = int(root.winfo_screenheight())
