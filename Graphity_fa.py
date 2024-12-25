@@ -2,6 +2,8 @@ import math
 import webbrowser
 import re
 from tkinter import *
+import base64
+from icon import encoded_string
 
 def s(t):
     return 1 if t == 0 else 0
@@ -101,7 +103,13 @@ def open_url_jm(event):
 
 # Initialize the main Tkinter window
 root = Tk()
-root.iconbitmap(r'drawplot.ico')  # Set the icon for the window
+try:
+    icon = base64.b64decode(encoded_string)
+    with open("temp.ico", "wb") as temp_icon:
+        temp_icon.write(icon)
+    root.iconbitmap(r'temp.ico') # Set the icon for the window
+except:
+    pass
 root.title("Drawplot Farsi")  # Set the window title
 
 main_width = 880  # Width of the main window
