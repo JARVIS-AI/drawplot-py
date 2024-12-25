@@ -102,7 +102,7 @@ def open_url_jm(event):
 # Initialize the main Tkinter window
 root = Tk()
 root.iconbitmap(r'drawplot.ico')  # Set the icon for the window
-root.title("Drawplot")  # Set the window title
+root.title("Drawplot Farsi")  # Set the window title
 
 main_width = 880  # Width of the main window
 main_height = 700  # Height of the main window
