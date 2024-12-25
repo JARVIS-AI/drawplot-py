@@ -78,7 +78,7 @@ If you want other versions and language just use source code and compile them by
 ## How to compile version 2 (Recommended)
 
 ```bash
-python3.13 -m venv .env
+pip install pyinstaller
 
 pyinstaller --onefile --windowed --icon=drawplot.ico --noconsole --strip --clean --name "Drawplot_FA_macOS" Graphity_fa.py
 
