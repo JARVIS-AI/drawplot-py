@@ -9,11 +9,11 @@ We developed 2 version of this app
 
 No differences in functionality tho in app size and speed of running there are much to say.
 
-RECOMMENDED is Second Version
+**RECOMMENDED is Second Version**
 
 ## Screenshot
 
-#### Version 1
+### Version 1
 
 ##### macOS
 
@@ -25,11 +25,11 @@ RECOMMENDED is Second Version
 
 ---
 
-#### Version 2
+### Version 2
 
 ##### macOS
 
-Farsi version
+Farsi Version
 
 ![MainUI MacOS](sc/sc_fa.png)
 
