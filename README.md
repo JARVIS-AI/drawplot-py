@@ -80,8 +80,6 @@ If you want other versions and language just use source code and compile them by
 ```bash
 python3.13 -m venv .env
 
-pip install -r requirements.txt
-
 pyinstaller --onefile --windowed --icon=drawplot.ico --noconsole --strip --clean --name "Drawplot_FA_macOS" Graphity_fa.py
 
 pyinstaller --onefile --windowed --icon=drawplot.ico --noconsole --strip --clean --name "Drawplot_EN_macOS" Graphity_en.py
