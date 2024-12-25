@@ -1,6 +1,18 @@
 # drawplot-py
 Drawing Plot for Signal &amp; System designs
 
+## Screenshot
+
+##### macOS
+
+![MainUI MacOS](sc/sc_1.png)
+
+---
+
+##### Windows
+
+![MainUI Windows](sc/sc_2.png)
+
 ## Requirements
 
 - Python 3.13+
