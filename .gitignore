@@ -7,3 +7,11 @@ dist/
 .venv/
 env/
 venv/
+
+.git
+
+__pycache__/
+
+temp.ico
+
+*.spec
