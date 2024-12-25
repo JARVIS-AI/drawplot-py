@@ -59,6 +59,30 @@ Japanese Version
 - Matplotlib
 - Numpy
 
+## Download
+
+You can use pre build macOS farsi version [here](https://github.com/JARVIS-AI/drawplot-py/releases/download/2.1.2/Drawplot_FA_macOS.app.zip)
+
+If you want other versions and language just use source code and compile them by yourself
+
+## How to compile
+
+```bash
+python3.13 -m venv .env
+
+pip install -r requirements.txt
+
+pyinstaller --onefile --windowed --icon=drawplot.ico --noconsole --strip --clean --name "Drawplot_FA_macOS" Graphity_fa.py
+
+pyinstaller --onefile --windowed --icon=drawplot.ico --noconsole --strip --clean --name "Drawplot_EN_macOS" Graphity_en.py
+
+pyinstaller --onefile --windowed --icon=drawplot.ico --noconsole --strip --clean --name "Drawplot_JP_macOS" Graphity_jp.py
+
+on Windows just rename the --name "Drawplot_JP_Win"
+
+Same goes on linux
+```
+
 ## Credit
 
 - Windows developer : [Mr.Hidden](https://t.me/Darker1063)
